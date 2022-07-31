@@ -1,0 +1,140 @@
+@import 'sass/components/navigation';
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+.main-header {
+    display: block;
+
+    .toolbar {
+        width: 100%;
+        max-height: 100px;
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+
+        ul {
+            align-items: center;
+            display: flex;
+            gap: 1em;
+            margin: 0;
+            padding: 0;
+
+            li {
+                list-style: none;
+                list-style-type: none;
+            }
+
+            a {
+                align-items: center;
+                color: #000000;
+                display: flex;
+                font-family: sans-serif;
+                text-decoration: none;
+            }
+
+            svg:hover {
+                cursor: pointer;
+                fill: #E6C200;
+                transform: scale(1.5);
+            }
+        }
+
+        span#logo {
+            max-width: 150px;
+            height: 100%;
+            padding: .5em 0;
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+section.hero {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

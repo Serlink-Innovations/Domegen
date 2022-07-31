@@ -1,0 +1,34 @@
+.navbar {
+    align-items: center;
+    background-color: #430B43;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+
+    ul#nav {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+
+        li {
+            display: block;
+            list-style: none;
+            list-style-type: none;
+        }
+
+        a {
+            color: #FFFFFF;
+            display: flex;
+            font-size: .9em;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #E6C200;
+            transform: scale(1.2);
+        }
+    }
+
+}
