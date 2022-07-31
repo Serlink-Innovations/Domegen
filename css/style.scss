@@ -164,7 +164,7 @@ section.hero {
 
 section.collections {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     padding: 1em;
     place-items: center;
     gap: 1em;
