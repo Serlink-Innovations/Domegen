@@ -177,7 +177,7 @@ section.hero {
   position: relative;
 }
 section.hero img {
-  width: 100%;
+  width: inherit;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
