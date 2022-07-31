@@ -128,14 +128,8 @@ select {
         padding-left: 1em;
         padding-right: 1em;
         grid-template-areas:
-            "logo navToggle"
+            "logo tools"
         ;
-
-        .navToggle {
-            grid-area: navToggle;
-            display: flex;
-            align-items: center;
-        }
 
         ul {
             align-items: center;
@@ -175,6 +169,11 @@ select {
                 object-fit: contain;
                 padding: .5em;
             }
+        }
+
+        ul#tools {
+            grid-area: tools;
+            display: flex;
         }
     }
 }

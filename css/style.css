@@ -1,6 +1,7 @@
 @media only screen and (min-width: 600px) and (min-width: 768px) {
   .navbar {
     align-items: center !important;
+    display: flex !important;
     flex-direction: row;
   }
   .navbar .navToggle {
@@ -8,6 +9,7 @@
   }
   .navbar ul#nav {
     display: flex !important;
+    padding: 0 !important;
   }
   .navbar ul#nav a {
     padding-bottom: 0 !important;
@@ -17,13 +19,25 @@
   }
 }
 .navbar {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #430B43;
   color: #FFFFFF;
   display: flex;
   justify-content: center;
+}
+.navbar .active {
+  width: 100%;
+  align-items: flex-start !important;
+  background-color: #430B43;
+  display: flex !important;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: absolute;
+  z-index: 9999;
+  margin-top: 7.2em;
+  gap: 1em !important;
 }
 .navbar .navToggle {
   display: flex;
@@ -35,9 +49,12 @@
 }
 .navbar ul#nav {
   align-items: center;
+  background-color: #430B43;
+  top: 0;
   display: none;
   flex-wrap: wrap;
   gap: 2em;
+  padding: 1em;
 }
 .navbar ul#nav li {
   display: block;
@@ -50,7 +67,6 @@
   font-size: 0.9em;
   font-family: sans-serif;
   text-decoration: none;
-  padding-bottom: 1em;
 }
 .navbar ul#nav a:hover {
   color: #E6C200;
@@ -177,12 +193,7 @@ select {
   grid-template-columns: 2fr auto;
   padding-left: 1em;
   padding-right: 1em;
-  grid-template-areas: "logo navToggle";
-}
-.main-header .toolbar .navToggle {
-  grid-area: navToggle;
-  display: flex;
-  align-items: center;
+  grid-template-areas: "logo tools";
 }
 .main-header .toolbar ul {
   align-items: center;
@@ -220,6 +231,10 @@ select {
   -o-object-fit: contain;
      object-fit: contain;
   padding: 0.5em;
+}
+.main-header .toolbar ul#tools {
+  grid-area: tools;
+  display: flex;
 }
 
 @media only screen and (min-width: 600px) and (min-width: 768px) {
