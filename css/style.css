@@ -200,7 +200,7 @@ section.collections div#collection__A img,
 section.collections div#collection__B img,
 section.collections div#collection__C img {
   width: inherit;
-  max-height: 400px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
 }
