@@ -173,7 +173,7 @@ select {
 
 section.hero {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   position: relative;
 }
 section.hero img {
