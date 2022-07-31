@@ -177,7 +177,7 @@ section.collections {
 
         img {
             width: inherit;
-            height: 400px;
+            max-height: 400px;
             object-fit: cover;
         }
 
