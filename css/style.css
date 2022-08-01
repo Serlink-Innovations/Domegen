@@ -217,6 +217,10 @@ select {
   font-family: sans-serif;
   text-decoration: none;
 }
+.main-header .toolbar ul svg {
+  width: 2.2em;
+  height: 2.2em;
+}
 .main-header .toolbar ul svg:hover {
   cursor: pointer;
   fill: #E6C200;
