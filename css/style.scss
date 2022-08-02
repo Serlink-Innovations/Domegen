@@ -1,4 +1,5 @@
 @import 'sass/components/navigation';
+@import 'sass/fonts/fonts';
 
 /* Box sizing rules */
 *,
@@ -197,6 +198,42 @@ section.hero {
     width: 100%;
     height: auto;
     position: relative;
+
+    .hero__overlay {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        position: absolute;
+        place-items: center;
+        justify-content: center;
+        line-height: 1;
+
+        h1 {
+            color: #E6C200;
+            font-family: 'Birthstone Bounce',
+                cursive;
+            font-size: clamp(4em, 7vw, 16em);
+        }
+
+        h3 {
+            color: #FFFFFF;
+            display: block;
+            font-size: 2em;
+            font-weight: 100;
+            font-family: sans-serif;
+        }
+
+        p {
+            text-align: center;
+            color: #FFFFFF;
+            font-family: sans-serif;
+            max-width: 55ch;
+            margin-top: 2em;
+        }
+
+    }
 
     img {
         width: inherit;
