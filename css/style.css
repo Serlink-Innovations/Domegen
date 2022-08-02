@@ -476,6 +476,7 @@ section.footer .footer__container #newsletter span input#newsletter__btn:hover {
   font-size: 1.2em;
 }
 .product button.btn {
+  width: 100%;
   border: none;
   font-family: sans-serif;
   padding: 0.4em 1em;
