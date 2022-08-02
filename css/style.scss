@@ -163,7 +163,6 @@ select {
             svg:hover {
                 cursor: pointer;
                 fill: #E6C200;
-                transform: scale(1.5);
             }
         }
 
@@ -428,7 +427,11 @@ section.footer {
         flex-direction: column;
         justify-content: center;
         height: 100%;
-        background-color: rgba($color: #000000, $alpha: 0.5);
+        background-color: rgba($color: #430B43, $alpha: 0.8);
+
+        #product__price {
+            padding: 1em;
+        }
     }
 
     label,
@@ -440,6 +443,7 @@ section.footer {
         color: #FFFFFF;
         font-size: 1.3em;
         font-family: sans-serif;
+        letter-spacing: .05em;
     }
 
     label#product__price {

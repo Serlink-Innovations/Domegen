@@ -224,7 +224,6 @@ select {
 .main-header .toolbar ul svg:hover {
   cursor: pointer;
   fill: #E6C200;
-  transform: scale(1.5);
 }
 .main-header .toolbar span#logo {
   max-width: -webkit-fit-content;
@@ -457,7 +456,10 @@ section.footer .footer__container #newsletter span input#newsletter__btn:hover {
   flex-direction: column;
   justify-content: center;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(67, 11, 67, 0.8);
+}
+.product #product__overlay:hover #product__price {
+  padding: 1em;
 }
 .product label,
 .product button {
@@ -467,6 +469,7 @@ section.footer .footer__container #newsletter span input#newsletter__btn:hover {
   color: #FFFFFF;
   font-size: 1.3em;
   font-family: sans-serif;
+  letter-spacing: 0.05em;
 }
 .product label#product__price {
   color: #FFFFFF;
