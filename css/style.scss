@@ -399,7 +399,7 @@ section.footer {
 
 .product {
     max-width: 350px;
-    max-height: 550px;
+    max-height: 350px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -418,6 +418,8 @@ section.footer {
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            padding-top: 1em;
+            padding-bottom: 1em;
         }
     }
 
@@ -452,7 +454,6 @@ section.footer {
     }
 
     button.btn {
-        width: 100%;
         border: none;
         font-family: sans-serif;
         padding: 0.4em 1em;

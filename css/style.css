@@ -430,7 +430,7 @@ section.footer .footer__container #newsletter span input#newsletter__btn:hover {
 
 .product {
   max-width: 350px;
-  max-height: 550px;
+  max-height: 350px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -449,6 +449,8 @@ section.footer .footer__container #newsletter span input#newsletter__btn:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 .product #product__overlay:hover {
   align-items: center;
@@ -476,7 +478,6 @@ section.footer .footer__container #newsletter span input#newsletter__btn:hover {
   font-size: 1.2em;
 }
 .product button.btn {
-  width: 100%;
   border: none;
   font-family: sans-serif;
   padding: 0.4em 1em;
