@@ -491,12 +491,12 @@ div.copyright label {
 @media only screen and (min-width: 600px) and (min-width: 768px) {
   .product {
     width: 350px !important;
-    height: 350px !important;
+    max-height: 350px !important;
   }
 }
 .product {
   width: 100%;
-  max-height: 350px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   position: relative;
