@@ -253,13 +253,19 @@ section.hero {
         }
     }
 
-    section.new-arrivals {
-        display: grid;
+    @media only screen and (min-width: 600px) and (min-width: 768px) {
 
+        section.new-arrivals,
+        section.best-sellers {
+            padding: 0;
+        }
     }
 
+    section.new-arrivals,
     section.best-sellers {
         display: grid;
+        padding-right: 1em;
+        padding-left: 1em;
     }
 
 }
@@ -421,9 +427,16 @@ div.copyright {
     }
 }
 
+@media only screen and (min-width: 600px) and (min-width: 768px) {
+    .product {
+        width: 350px !important;
+        height: 350px !important;
+    }
+}
+
 .product {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    max-height: 350px;
     display: flex;
     flex-direction: column;
     position: relative;

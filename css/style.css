@@ -309,11 +309,17 @@ section.hero img {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
-.content section.new-arrivals {
-  display: grid;
+@media only screen and (min-width: 600px) and (min-width: 768px) {
+  .content section.new-arrivals,
+.content section.best-sellers {
+    padding: 0;
+  }
 }
+.content section.new-arrivals,
 .content section.best-sellers {
   display: grid;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 div.backtoTop {
@@ -451,9 +457,15 @@ div.copyright label {
      object-fit: cover;
 }
 
+@media only screen and (min-width: 600px) and (min-width: 768px) {
+  .product {
+    width: 350px !important;
+    height: 350px !important;
+  }
+}
 .product {
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  max-height: 350px;
   display: flex;
   flex-direction: column;
   position: relative;
