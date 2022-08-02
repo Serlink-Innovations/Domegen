@@ -264,6 +264,18 @@ section.hero {
 
 }
 
+div.backtoTop {
+    align-items: center;
+    background-color: #E6C200;
+    cursor: pointer;
+    color: #FFFFFF;
+    display: flex;
+    font-weight: bold;
+    font-family: sans-serif;
+    justify-content: center;
+    padding: 1em;
+}
+
 section.footer {
     background-color: #430B43;
     color: #FFFFFF;
@@ -381,6 +393,14 @@ section.footer {
             }
         }
     }
+}
+
+div.copyright {
+    align-items: center;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    padding: 1em;
 }
 
 .domegen,
