@@ -429,9 +429,11 @@ div.copyright {
   align-items: center;
   display: flex;
   font-family: sans-serif;
-  font-size: clamp(0.8em, 3vw, 1em);
   justify-content: center;
   padding: 1em;
+}
+div.copyright label {
+  font-size: clamp(0.9em, 3vw, 1em);
 }
 
 .domegen,
