@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "star";
+    src: url("assets/fonts/star.eot");
+    src: url("assets/fonts/star.eot?#iefix") format("embedded-opentype"), url("assets/fonts/star.woff") format("woff"), url("assets/fonts/star.ttf") format("truetype"), url("assets/fonts/star.svg#star") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**
+**Star Rating Customization Start
+**/
+.star-rating {
+    float: right;
+    overflow: hidden;
+    position: relative;
+    height: 1em;
+    line-height: 1;
+    font-size: 1.1rem;
+    width: 5.4em;
+    font-family: star;
+    color: var(--primary) !important;
+}
+
+.star-rating::before {
+    content: "sssss";
+    color: currentColor;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: var(--foreground);
+}
+
+.star-rating span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em;
+}
+
+.star-rating span::before {
+    content: "SSSSS";
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+
+p.stars a {
+    color: var(--alpha);
+    position: relative;
+    height: 1em;
+    width: 1em;
+    text-indent: -999em;
+    display: inline-block;
+    text-decoration: none;
+}
+
+p.stars>span {
+    display: flex !important;
+    gap: 0.4em;
+}
+
+p.stars a::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    line-height: 1;
+    font-family: star;
+    content: "S";
+    text-indent: 0;
+}
+
+p.stars a:hover~a::before {
+    content: "S";
+}
+
+p.stars:hover a::before {
+    content: "S";
+}
+
+p.stars.selected a.active::before {
+    content: "S";
+    color: #dbc683;
+}
+
+p.stars.selected a.active~a::before {
+    content: "S";
+    color: rgba(0, 0, 0, 0.2);
+}
+
+p.stars.selected a:not(.active)::before {
+    content: "S";
+    color: #dbc683;
+}
+
+#reviews .comment-form-rating .stars a:before {
+    width: 1.2em;
+    height: 1.2em;
+    font-size: 1.2em;
+}

@@ -1,0 +1,17 @@
+@use 'dashboard/woo-avatar';
+@use 'dashboard/woo-orders';
+@use 'navigation/woo-navigation';
+@use 'dashboard/woo-account_details';
+@use 'dashboard/woo-account-address';
+
+@media (min-width: 996px) {
+    .dashboard__container {
+        grid-template-columns: 1fr 2fr;
+        padding: 1rem;
+    }
+}
+
+.dashboard__container {
+    display: grid;
+    gap: 2rem;
+}

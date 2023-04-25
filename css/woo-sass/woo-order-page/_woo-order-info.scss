@@ -1,0 +1,53 @@
+.woocommerce-order-overview{
+    background-color: var(--secondary);
+    margin-block: 1rem;
+    padding: 1.5rem;
+}
+
+.woocommerce-order-details{
+    display: block;
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        thead {
+            background-color: var(--secondary);
+            color: var(--text-secondary);
+            text-align: left;
+
+            th {
+                padding: 12px 15px;
+            }
+        }
+
+        tbody td {
+            color: var(--text-secondary);
+            padding: 1rem;
+            text-align: left;
+
+            a{
+                color: inherit;
+                text-underline-offset: 0.25rem;
+            }
+
+            a:hover{
+                color: var(--primary);
+                font-weight: bold;
+            }
+            
+        }
+
+        tfoot {
+            background-color: var(--secondary);
+            color: var(--text-secondary);
+
+            th,
+            td {
+                padding: 12px 15px;
+                text-align: left;
+            }
+        }
+    }
+
+}

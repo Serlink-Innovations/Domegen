@@ -1,0 +1,110 @@
+@media (max-width: 996px) {
+  .logo {
+    align-items: center !important;
+    display: inline-flex !important;
+
+    img {
+      transform: translatey(0.4rem) !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+.logo {
+  width: 150px;
+  height: inherit;
+  grid-area: logo;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 1rem;
+  }
+}
+
+/**
+* Section Headers Container
+**/
+.contentHeader {
+  display: block;
+}
+
+/**
+*   Contaienrs
+**/
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 1408px) {
+  .container {
+    width: 1370px;
+  }
+}
+
+/**
+*   Margins and Padding
+**/
+@media (max-width: 768px) {
+  .mx-auto {
+    margin: 0 !important;
+  }
+}
+
+.mx-auto {
+  margin: auto;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mx-2 {
+  margin-block: 2rem;
+}
+
+.px-2 {
+  padding-block: 2rem;
+}
+
+.px-4 {
+  padding-block: 4rem;
+}
+
+/**
+*   Text Alignment
+**/
+.center {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+/**
+*   Titles
+**/
+.title-sm {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+}

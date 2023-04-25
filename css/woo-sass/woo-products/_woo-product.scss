@@ -1,0 +1,133 @@
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
+  gap: 2rem;
+  margin-block: 2rem;
+
+  li {
+    max-width: 265px;
+    height: inherit;
+    border-radius: 0.6rem;
+    color: var(--text-secondary);
+    display: grid;
+    gap: 0;
+    grid-template-areas:
+      "cardContent"
+      "cardBtn";
+
+    .woocommerce-LoopProduct-link {
+      color: inherit;
+      display: grid;
+      grid-template-areas:
+        "cardImg"
+        "cardTitle"
+        "star-rating"
+        "price"
+        "cardBtn"
+        "wishBtn";
+
+      grid-area: cardContent;
+      place-items: start;
+      text-decoration: none;
+      grid-column: 1 / -1;
+      grid-row: 1 / -1;
+      padding-bottom: 0.5rem;
+
+      .attachment-woocommerce_thumbnail,
+      .size-woocommerce_thumbnail,
+      .woocommerce-placeholder {
+        width: 265px;
+        height: 265px;
+        display: block;
+        object-fit: cover;
+        grid-area: cardImg;
+      }
+
+      .woocommerce-loop-product__title {
+        font-size: 14px;
+        grid-area: cardTitle;
+        line-height: 1.6;
+        padding-bottom: 0.5rem;
+      }
+
+      .price {
+        grid-area: price;
+      }
+
+      .star-rating {
+        grid-area: star-rating;
+      }
+    }
+
+    .wishsuite-btn {
+      background-color: var(--primary);
+      color: var(--text-primary);
+      border-radius: 100vmax;
+      padding: 0.6rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0.6rem 0.8rem;
+
+      .wishsuite-btn-text {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+
+    .wishsuite-btn-exist {
+      color: var(--text-secondary);
+      letter-spacing: 1px;
+      position: absolute;
+      padding-block: 0.5rem;
+      top: 0;
+    }
+
+    .wishsuite-shop-after_cart_btn {
+      display: flex;
+      width: max-content;
+      text-decoration: none;
+      grid-column-start: -3;
+      grid-column-end: -1;
+      justify-content: center;
+      text-align: center;
+      place-self: center;
+    }
+
+    .add_to_cart_button,
+    .wp-element-button {
+      grid-area: cardBtn;
+      display: none;
+      padding-block: 0.5rem;
+    }
+  }
+
+  li:hover {
+    overflow: hidden;
+    border: 1px solid rgba($color: #000000, $alpha: 0.1);
+    box-shadow: 6px 6px 2px rgba($color: #000000, $alpha: 0.1);
+    transform: scale(1.05);
+    position: relative;
+
+    h2,
+    .price,
+    .star-rating {
+      margin-inline: 0.5rem;
+    }
+
+    .button {
+      width: 100%;
+      background-color: rgba(#39055c, 0.8);
+      color: var(--text-primary);
+      display: block;
+      grid-area: cardBtn;
+      grid-column-end: auto;
+      position: absolute;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}

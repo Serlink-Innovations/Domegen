@@ -1,0 +1,27 @@
+#receipt-logo {
+    display: flex !important;
+    justify-content: center !important;
+
+    img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+    }
+}
+
+#receipt-order-details {
+    width: 100% !important;
+    text-align: left !important;
+}
+
+#receipt-order-number {
+    width: 100%;
+
+    th {
+        text-align: left;
+    }
+
+    td {
+        text-align: right;
+    }
+}

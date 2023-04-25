@@ -1,0 +1,41 @@
+.input-text,
+.mailpoet_text {
+    width: 100%;
+    border: 2px solid var(--primary);
+    background-color: #FFFFFF !important;
+    padding: 0.8rem 1rem !important;
+}
+
+.select2 {
+    border: 2px solid var(--primary);
+    background-color: #FFFFFF !important;
+    padding: 0.65rem 0.4rem;
+
+    .select2-selection {
+        border: none;
+        font-weight: bold;
+
+        .select2-selection__arrow {
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: center;
+        }
+
+
+    }
+}
+
+/**
+*   Customized Qantity Buttons
+**/
+input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}

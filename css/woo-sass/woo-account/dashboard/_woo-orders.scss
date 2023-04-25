@@ -1,0 +1,90 @@
+/**
+*   WooCommerce Order Table Customization (Account)
+**/
+
+@media (max-width: 996px) {
+  .woocommerce-MyAccount-orders thead {
+    display: none;
+  }
+
+  .woocommerce-MyAccount-orders,
+  .woocommerce-MyAccount-orders tbody,
+  .woocommerce-MyAccount-orders tr,
+  .woocommerce-MyAccount-orders td {
+    width: 100%;
+    display: block;
+  }
+
+  .woocommerce-MyAccount-orders tr {
+    margin-bottom: 1rem;
+  }
+
+  .woocommerce-MyAccount-orders tbody tr td {
+    position: relative;
+  }
+
+  .woocommerce-MyAccount-orders td:before {
+    content: attr(data-title);
+    font-weight: bold;
+    text-align: left;
+    left: 0;
+  }
+}
+
+.woocommerce-MyAccount-orders {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.woocommerce-MyAccount-orders thead {
+  background-color: var(--primary);
+  color: var(--text-primary);
+  padding: 1rem;
+}
+
+.woocommerce-MyAccount-orders thead tr th {
+  font-size: 14px;
+  font-weight: medium;
+  letter-spacing: 0.35px;
+  padding: 12px;
+}
+
+.woocommerce-MyAccount-orders tbody tr td {
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  padding: 8px;
+  border: 1px solid var(--primary);
+
+  a {
+    width: 100%;
+    color: var(--text-secondary);
+    display: inline-flex;
+    text-underline-offset: 0.2rem;
+    justify-content: center;
+  }
+
+  a:hover {
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+  .button {
+    width: 100% !important;
+    display: inline-flex;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: var(--text-primary);
+    margin-block: 0.2rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+  .button:hover {
+    color: #000000;
+    outline: 2px solid var(--primary);
+    background-color: var(--secondary);
+    font-weight: bold;
+  }
+}

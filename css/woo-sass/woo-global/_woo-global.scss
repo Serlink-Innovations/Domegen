@@ -1,0 +1,265 @@
+/**
+*   On Sale Sticker
+**/
+.onsale {
+  width: max-content;
+  background-color: orange;
+  color: var(--text-secondary);
+  display: block;
+  font-weight: bold;
+  padding-inline: 1rem;
+  padding-block: 0.4rem;
+  top: 2rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.payment_box {
+  background-color: var(--secondary);
+  padding: 1rem;
+}
+
+.payment_method_wipay_credit {
+  display: block;
+
+  img {
+    display: none !important;
+  }
+}
+
+/**
+*   Quantity
+**/
+.quantity {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  place-items: center;
+
+  input {
+    outline: none;
+  }
+
+  .plus-arrow,
+  .minus-arrow {
+    align-items: center;
+    border: none;
+    background-color: var(--primary);
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    padding-inline: 1rem;
+    justify-content: center;
+    user-select: none !important;
+  }
+
+  svg {
+    width: 1em;
+    height: 1em;
+    align-items: center;
+    display: flex;
+    fill: var(--text-primary);
+  }
+}
+
+/**
+*   WooCommerce Notice Wrapper
+**/
+.woocommerce-notices-wrapper {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--text-secondary);
+  justify-content: center;
+
+  a {
+    color: inherit;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    text-underline-offset: 0.25rem;
+  }
+
+  a:hover {
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 0.1rem;
+  }
+
+  .woocommerce-error,
+  .woocommerce-message {
+    width: 100%;
+    border: 2px solid var(--primary);
+    padding: 1rem;
+    text-align: center;
+
+    table {
+      width: 100%;
+
+      tbody {
+        display: block;
+
+        tr {
+          text-align: left;
+
+          th,
+          td {
+            display: flex;
+            text-align: left !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.woocommerce-result-count {
+  width: max-content;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.woocommerce-ordering {
+  width: max-content;
+  margin-right: 0;
+
+  select {
+    border: 2px solid var(--primary);
+    padding: 0.6rem 1rem;
+  }
+}
+
+/**
+* WooCommerce Gift Boxes
+**/
+.wcpb-cat-label {
+  font-weight: bold;
+
+  span,
+  a {
+    color: var(--text-secondary);
+    font-weight: 100;
+  }
+}
+
+/**
+*   WooCommerce Pagination
+**/
+.woocommerce-pagination {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+
+  .page-numbers {
+    align-items: center;
+    gap: 0.5rem;
+    display: flex;
+
+    li {
+      list-style: none;
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .current,
+    .next,
+    .prev {
+      background-color: var(--primary);
+      color: var(--secondary);
+      display: block;
+      font-weight: bold;
+      padding-block: 0.1rem;
+      padding-inline: 0.9rem;
+    }
+  }
+}
+
+.out-of-stock {
+  width: 90%;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  display: flex;
+  font-weight: 600;
+  justify-content: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  padding-block: 0.2rem;
+}
+
+.in-stock {
+  color: green;
+  font-size: 1rem;
+  font-weight: 600;
+  padding-block: 0.5rem;
+}
+
+.price {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 996px) {
+  .woocommerce-product-search {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    display: none !important;
+    position: fixed;
+    place-content: center;
+    padding: 2rem !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 45;
+
+    .search-field {
+      height: max-content !important;
+      border: 2px solid var(--primary) !important;
+      padding: 0.8rem;
+    }
+
+    button {
+      background-color: var(--primary);
+      color: var(--text-primary);
+      padding: 1rem !important;
+    }
+  }
+}
+
+.showSearch {
+  display: grid !important;
+  left: auto;
+}
+
+.woocommerce-product-search {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding-bottom: 1rem;
+
+  .search-field {
+    width: 100% !important;
+    height: 100%;
+    border: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: block;
+    outline: none;
+    padding-inline: 1rem;
+  }
+
+  button {
+    height: max-content;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 0.8rem;
+  }
+}

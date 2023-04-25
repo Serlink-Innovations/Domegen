@@ -1,0 +1,83 @@
+@media(min-width: 996px) {
+    .checkout__formContainer {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1.5fr 1fr;
+
+        h3 {
+            font-size: clamp(1rem, 10vw, 1.5rem);
+        }
+    }
+}
+
+.checkout_coupon {
+    max-width: 55ch;
+    display: flex;
+    flex-direction: column;
+}
+
+#order_review {
+    display: block;
+
+    h3 {
+        font-size: clamp(1rem, 10vw, 1.5rem);
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        thead {
+            background-color: var(--secondary);
+            color: var(--text-secondary);
+            text-align: left;
+
+            th {
+                padding: 12px 15px;
+            }
+        }
+
+        tbody td {
+            padding: 1rem;
+            text-align: left;
+        }
+
+        tfoot {
+            background-color: var(--secondary);
+            color: var(--text-secondary);
+
+            th,
+            td {
+                padding: 12px 15px;
+                text-align: left;
+            }
+        }
+    }
+
+    .woocommerce-checkout-payment {
+        display: flex;
+        flex-direction: column;
+
+        .wc_payment_methods {
+            margin-block: 1rem;
+        }
+    }
+
+    .place-order {
+        display: block;
+
+        .woocommerce-privacy-policy-text {
+            font-weight: 600;
+        }
+
+        #place_order {
+            width: 100%;
+            margin-block: 1rem;
+        }
+    }
+}
+
+#order_comments {
+    min-height: 300px;
+    resize: none;
+}

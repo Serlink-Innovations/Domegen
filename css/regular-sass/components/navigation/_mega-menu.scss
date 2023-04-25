@@ -1,0 +1,44 @@
+@media (min-width: 996px) {
+  #mega-menu-wrap-primary {
+    display: block !important;
+    background: transparent;
+
+    #mega-menu-primary {
+      background: inherit;
+      flex-direction: row !important;
+    }
+  }
+}
+
+#mega-menu-wrap-primary {
+  background: transparent;
+  display: none;
+  grid-area: navbar !important;
+
+  #mega-menu-primary {
+    display: flex !important;
+    flex-direction: column;
+
+    li {
+      padding: 0.5rem 1rem;
+
+      .mega-menu-link {
+        background: transparent;
+        font-size: clamp(1rem, 10vw, 1.1rem) !important;
+        padding: 0.4rem 0.8rem !important;
+
+        .mega-sub-menu > li > a {
+          background: transparent;
+          font-size: clamp(1rem, 10vw, 1.1rem) !important;
+          padding: 0.4rem 0.8rem !important;
+        }
+      }
+
+      .mega-menu-link:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.25em;
+        text-decoration-thickness: 0.2rem;
+      }
+    }
+  }
+}

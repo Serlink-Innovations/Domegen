@@ -1,0 +1,90 @@
+@media (max-width: 996px) {
+  .greeting {
+    display: block;
+  }
+}
+
+.woocommerce-MyAccount-navigation,
+.woocommerce-MyAccount-content {
+  height: max-content;
+  border-radius: 8px;
+  box-shadow: 0 0 2px rgba($color: #000000, $alpha: 0.8);
+  padding: 1rem;
+}
+
+@media (min-width: 996px) {
+  .woocommerce-MyAccount-navigation>ul {
+    flex-direction: column !important;
+
+    li {
+      text-align: left !important;
+    }
+  }
+}
+
+.woocommerce-MyAccount-navigation {
+  display: block;
+  overflow: auto;
+
+  ul {
+    border-radius: 8px;
+    display: flex;
+    padding-block: 1rem;
+    scroll-snap-type: x mandatory;
+    overflow: auto;
+
+    .is-active {
+      border-radius: 8px;
+      background-color: var(--primary);
+      display: inline-flex;
+      color: var(--text-primary);
+      font-weight: bold;
+      justify-content: center;
+
+      a {
+        transform: scale(1.1);
+      }
+    }
+
+    li {
+      width: 100%;
+      background-color: transparent;
+      display: block;
+      flex: none;
+      scroll-snap-align: center;
+      scroll-snap-stop: always;
+      text-align: center;
+
+      a {
+        color: inherit;
+        display: block;
+        font-size: 1rem;
+        padding: 1rem;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
+
+.titleContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+
+  .greeting {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: center;
+    line-height: 1;
+  }
+
+  h2 {
+    width: max-content;
+    line-height: 1;
+    font-size: clamp(1rem, 10vw, 2.2rem);
+    margin-top: 1rem;
+  }
+}

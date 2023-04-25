@@ -1,0 +1,14 @@
+.woocommerce-Addresses,
+.addresses {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+
+    address {
+        border-radius: 8px;
+        box-shadow: 5px 5px 2px rgba($color: #000000, $alpha: 0.4);
+        border: 2px solid var(--primary);
+        padding: 1rem;
+    }
+}

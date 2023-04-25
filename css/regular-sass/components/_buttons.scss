@@ -1,0 +1,41 @@
+/**
+*   Buttons
+**/
+.btn,
+.submit {
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 12px 15px;
+  justify-content: center;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.btn-primary,
+.submit {
+  color: #ffffff;
+  background-color: var(--primary);
+  font-weight: medium;
+}
+
+.btn-primary:hover {
+  color: #000000;
+  outline: 2px solid var(--primary);
+  background-color: var(--secondary);
+  font-weight: bold;
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  font-weight: bold;
+  color: #000000;
+}
+
+.btn-secondary:hover {
+  outline: 2px solid var(--primary);
+  font-weight: bold;
+  color: #000000;
+}
