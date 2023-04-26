@@ -801,10 +801,9 @@
   text-underline-offset: 0.2rem;
   text-decoration-thickness: 0.12rem;
 }
-.product .summary .wishsuite-btn-exist,
-.product .summary .added {
-  background-color: var(--secondary) !important;
+.product .summary .wishsuite-btn-exist {
   color: var(--text-secondary) !important;
+  margin-top: 1rem;
 }
 .product .summary .wishsuite-product-after_cart_btn {
   color: inherit;
